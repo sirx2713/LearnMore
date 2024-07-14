@@ -11,6 +11,7 @@
 		91A692432C44542400ADABC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A692422C44542400ADABC7 /* ContentView.swift */; };
 		91A692452C44542600ADABC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A692442C44542600ADABC7 /* Assets.xcassets */; };
 		91A692482C44542600ADABC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A692472C44542600ADABC7 /* Preview Assets.xcassets */; };
+		91A692502C44544200ADABC7 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 91A6924F2C44544200ADABC7 /* SamplePackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A692502C44544200ADABC7 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = LearnMore;
+			packageProductDependencies = (
+				91A6924F2C44544200ADABC7 /* SamplePackage */,
+			);
 			productName = LearnMore;
 			productReference = 91A6923D2C44542400ADABC7 /* LearnMore.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 91A692342C44542400ADABC7;
+			packageReferences = (
+				91A6924E2C44544200ADABC7 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			productRefGroup = 91A6923E2C44542400ADABC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91A6924E2C44544200ADABC7 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91A6924F2C44544200ADABC7 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A6924E2C44544200ADABC7 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91A692352C44542400ADABC7 /* Project object */;
 }
