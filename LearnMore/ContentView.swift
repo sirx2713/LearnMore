@@ -12,7 +12,7 @@ struct ContentView: View {
     
     let possibleNumbers = 1...50
     var results:String{
-        let selected = possibleNumbers.random(7).sorted()
+        let selected = possibleNumbers.random(17).sorted()
         let string = selected.map(String.init)
         return string.formatted()
     }
